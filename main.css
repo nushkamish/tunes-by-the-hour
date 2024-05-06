@@ -1,0 +1,236 @@
+body {
+
+    background-color: black;
+    color: white;
+    font-family: "area-normal", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    overflow: hidden;
+    
+    
+   
+}
+
+.title {
+
+    color: white;
+    font-size: 20px;
+    font-family: "area-nomal", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: font-size 0.3s;
+    
+    
+}
+
+
+.info {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -22px;
+    transition: background-color 0.3s;
+
+    
+    
+}
+
+.times {
+    color: rgb(70, 69, 69);
+    font-size: 20px;
+    font-family: "area-normal", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    position: absolute; 
+    top: 154.30%;
+    left:57%; 
+    transform: translate(-50%, -50%); 
+    transition: font-size 0.3s;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+ 
+}
+
+.times div {
+    margin-bottom: 10px; 
+}
+
+.play {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%; 
+    left:44%; 
+    transform: translate(-50%, -50%); 
+    background: linear-gradient(to right, #CE4257, #78A1BB, #FF9B54);
+    background-size: 300% 100%; 
+    animation: moveGradient 5s linear infinite, scalePlay 2s alternate infinite;
+    transition: background-color 0.3s ,width 0.4s, height 0.4s;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes scalePlay {
+    0% {
+        transform: translate(-50%, -50%) scale(1); 
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+}
+
+
+
+
+.move-gradient-animation {
+    animation: moveGradient 5s linear infinite;
+}
+
+
+
+
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 60px;
+    z-index: 9999; 
+    display: none;
+    color: black;
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+    max-width: 50%;
+
+
+}
+    
+   
+
+
+#mood {
+
+font-family: "area-normal", sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 17px;
+text-align: center;
+justify-content: center;
+
+}
+
+#playing {
+display: flex;
+justify-content: center; 
+align-items: center; 
+font-family: "area-normal", sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 17px;
+text-align: center;
+justify-content: center;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 17px;
+    }
+    .info {
+        font-size: 18px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin-top: -18px;
+    }
+    .times {
+        font-size: 16px;
+        position: absolute; 
+        top: 159%; 
+        left: 65%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    .play {
+
+        width: 16px;
+        height: 16px;
+        top: 49.75%; 
+        left: 42%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    .popup {
+
+        font-size: 12px;
+        padding: 20px;
+        font-weight: 400;
+    }
+
+    #mood
+     {
+
+        font-size: 12px;
+
+    }
+
+    #playing {
+
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 18px;
+    }
+    .info {
+        font-size: 16px;
+    }
+    .times {
+        font-size: 18px;
+    }
+
+    .times {
+        font-size: 18px;
+        position: absolute; 
+        top: 43.75%; 
+        left: 65%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    .play {
+
+        width: 16px;
+        height: 16px;
+        top: 49.75%; 
+        left: 39%; 
+        transform: translate(-50%, -50%); 
+    }
+}
+    
