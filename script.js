@@ -5,7 +5,11 @@ let timesDiv = document.querySelector('.times');
 
 let popUp = document.querySelector('.popup');
 
+let hr = document.querySelector('hr');
+
 let infoVisible = false;
+
+
 
 
 function toggleInfo() {
@@ -73,7 +77,7 @@ function updateTime() {
 
     let playElement = document.querySelector('.play');
     let timesDiv = document.querySelector('.times');
-    let startingPoint =  154.3
+    let startingPoint = 20
     let hour1 = document.querySelector('.hour1');
     let hour2 = document.querySelector('.hour2');
     let hour3 = document.querySelector('.hour3');
@@ -152,7 +156,7 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour1.style.color= "white";
         hour24.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint;
+        timesDiv.style.top= "calc(50% -" + startingPoint + "px)";
 
        
       
@@ -169,7 +173,9 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%";
         hour2.style.color= "white";
         hour1.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - 9.1 + "%";
+        timesDiv.style.top= "calc(50% -" + startingPoint + 72.9 + "px)";
+        hr.style. backgroundColor= "black";
+
        
       
     } 
@@ -185,7 +191,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour3.style.color= "white";
         hour2.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*2) + "%";
+        timesDiv.style.top= "calc(50% -" + startingPoint + (72.9*2) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
 
@@ -200,7 +207,7 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour4.style.color= "white";
         hour3.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*3) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*3)) + "px)";
       
       
     } 
@@ -216,7 +223,7 @@ console.log(days[thisWeekday]);
         popUp.style.color = "white";
         hour5.style.color= "white";
         hour4.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*4) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*4)) + "px)";
       
     } 
        // 5AM
@@ -230,7 +237,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour6.style.color= "white";
         hour5.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*5) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*5)) + "px)";
+        hr.style.backgroundColor = "black";
 
       
     } 
@@ -245,7 +253,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour7.style.color= "white";
         hour6.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*6) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*6)) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
        // 7AM
@@ -259,7 +268,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour8.style.color= "white";
         hour7.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*7) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*7)) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
        // 8AM
@@ -273,7 +283,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour9.style.color= "white";
         hour8.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*8) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*8)) + "px)";
+        hr.style.backgroundColor = "black";
      
       
     } 
@@ -288,7 +299,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour10.style.color= "white";
         hour9.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*9) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*9)) + "px)";
+        hr.style.backgroundColor = "black";
 
     } 
        // 10AM
@@ -302,7 +314,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour11.style.color= "white";
         hour10.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*10) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*10)) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
        // 11AM
@@ -316,8 +329,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour12.style.color= "white";
         hour11.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*11) + "%";
-      
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*11)) + "px)";
+        hr.style.backgroundColor = "black";
     } 
        //NOON
        if (thisHour === 12 ) {
@@ -330,8 +343,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour13.style.color= "white";
         hour12.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*12) + "%";
-    
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*12)) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
 
@@ -346,8 +359,9 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour14.style.color= "white";
         hour13.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*13) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*13)) + "px)";
         timesDiv.style.top= "transition 3s";
+        hr.style.backgroundColor = "black";
         
         
       
@@ -363,8 +377,9 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour15.style.color= "white";
         hour14.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*14) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*14)) + "px)";
         timesDiv.style.top= "transition 3s";
+        hr.style.backgroundColor = "black";
       
     } 
        // 3PM
@@ -378,7 +393,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour16.style.color= "white";
         hour15.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*15) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*15)) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
      
@@ -394,8 +410,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour17.style.color= "white";
         hour16.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*16) + "%";
-      
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*16)) + "px)";
+        hr.style.backgroundColor = "black";
     } 
 
        // 5PM
@@ -409,7 +425,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour18.style.color= "white";
         hour17.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*17) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*17)) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
        // 6PM
@@ -424,7 +441,7 @@ console.log(days[thisWeekday]);
         popUp.style.color = "white";
         hour19.style.color= "white";
         hour18.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*18) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*18)) + "px)";
       
     } 
        // 7PM
@@ -438,7 +455,9 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour20.style.color= "white";
         hour19.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*19) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*19)) + "px)";
+        hr.style.backgroundColor = "black";
+        
       
     } 
        // 8PM
@@ -453,7 +472,7 @@ console.log(days[thisWeekday]);
         popUp.style.color = "white";
         hour21.style.color= "white";
         hour20.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*20) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*20)) + "px)";
       
     } 
        // 9PM
@@ -467,7 +486,8 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour22.style.color= "white";
         hour21.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*21) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*21)) + "px)";
+        hr.style.backgroundColor = "black";
       
     } 
        // 10PM
@@ -482,7 +502,8 @@ console.log(days[thisWeekday]);
             popUp.style.backgroundSize = "300% 100%"; 
             hour23.style.color= "white";
             hour22.style.color= " rgb(70, 69, 69)";
-            timesDiv.style.top= startingPoint - (9.1*22) + "%";
+            timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*22)) + "px)";
+            hr.style.backgroundColor = "black";
       
     } 
        // 11PM
@@ -496,9 +517,13 @@ console.log(days[thisWeekday]);
         popUp.style.backgroundSize = "300% 100%"; 
         hour24.style.color= "white";
         hour23.style.color= " rgb(70, 69, 69)";
-        timesDiv.style.top= startingPoint - (9.1*23) + "%";
+        timesDiv.style.top= "calc(50% - " + (startingPoint + (72.9*23)) + "px)";
+        console.log( "calc(50% - " + (startingPoint + (72.9*23)) + "px)");
+        hr.style.backgroundColor = "black";
       
     } 
+
+    
 
 }
 
@@ -738,37 +763,6 @@ function toggleSize() {
 
 //placeholder
 
-// Define a variable to store the currently playing song name
-let currentSongName = "";
-
-// Function to update the currently playing song
-function updateCurrentSongName(songName) {
-    currentSongName = songName;
-    let playingSpan = document.querySelector('.playing');
-    if (playingSpan) {
-        playingSpan.textContent = currentSongName;
-    }
-}
-
-// Function to play a random song from a given playlist
-function playRandomSong(playlist) {
-    let randomIndex = Math.floor(Math.random() * playlist.length);
-    let randomSong = playlist[randomIndex];
-    // Play the song, assuming you have a function to play audio
-    playAudio(randomSong);
-    // Update the currently playing song name
-    updateCurrentSongName(getSongNameFromPath(randomSong));
-}
-
-// Function to extract the song name from the file path
-function getSongNameFromPath(filePath) {
-    // Example: "audio/songs0/song1.mp3" -> "song1"
-    return filePath.split('/').pop().split('.')[0];
-}
-
-// Example usage
-let currentHourPlaylist = playlists['00']; // Assuming it's 00 hour
-playRandomSong(currentHourPlaylist);
 
 
 
